@@ -1,9 +1,9 @@
 import express from "express";
 const patientRouter = express.Router();
-import patientData from "../data/patient";
+import { getAllPatient } from "../services/patient";
 
 patientRouter.get("/", (req, res) => {
-  res.status(200).json(patientData);
+  res.status(200).json(getAllPatient());
 });
 
 export default patientRouter;
