@@ -9,8 +9,8 @@ app.use(express.json());
 
 const PORT = 3001;
 
-app.get("/ping", (req, res) => {
-  res.send("PONG");
+app.get("/api/ping", (req, res) => {
+  res.status(200).send("PONG");
 });
 
 app.use("/api/patients", patientRouter);
