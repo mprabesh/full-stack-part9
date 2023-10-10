@@ -2,7 +2,7 @@ POST http://localhost:3001/api/patients
 content-type:application/json
 
 {
-    "name":"Prabesh Magar",
+    "name":"Sirish Tamang",
     "dateOfBirth":"2002-11-09",
     "gender":"male",
     "occupation":"student",
