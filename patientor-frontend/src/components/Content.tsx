@@ -3,10 +3,16 @@ export interface CourseType {
   exerciseCount: number;
 }
 
-export const Content = (courseParts: CourseType[]) => (
+interface CourseProps{
+    courseParts:CourseType[]
+}
+
+
+export const Content = ({courseParts}:CourseProps) => (
   <>
-    {courseParts.map((val) => (
-      <p>
+  {console.log(Array.isArray(courseParts))}
+    {courseParts.map((val:CourseType) => (
+      <p key={val.name}>
         {val.name} {val.exerciseCount}
       </p>
     ))}
