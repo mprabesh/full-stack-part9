@@ -1,10 +1,10 @@
-import { Content,CourseType } from "./components/Content";
+import { Content } from "./components/Content";
 import { Header } from "./components/Header";
 import { Total } from "./components/Total";
 
 const App = () => {
   const courseName = "Half Stack application development";
-  const courseParts:CourseType[] = [
+  const courseParts = [
     {
       name: "Fundamentals",
       exerciseCount: 10,
@@ -17,6 +17,7 @@ const App = () => {
       name: "Deeper type usage",
       exerciseCount: 14
     }
+    
   ];
 
   const totalExercises = courseParts.reduce((sum, part) => sum + part.exerciseCount, 0);

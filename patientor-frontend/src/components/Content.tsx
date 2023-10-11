@@ -1,12 +1,4 @@
-export interface CourseType {
-  name: string;
-  exerciseCount: number;
-}
-
-interface CourseProps{
-    courseParts:CourseType[]
-}
-
+import { CourseProps,CourseType } from "../types";
 
 export const Content = ({courseParts}:CourseProps) => (
   <>
