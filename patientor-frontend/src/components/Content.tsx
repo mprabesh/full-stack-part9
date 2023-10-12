@@ -1,10 +1,10 @@
-import { CourseProps,CourseType } from "../types";
+import { CourseProps,CoursePart } from "../types";
 
 export const Content = ({courseParts}:CourseProps) => (
   <>
-    {courseParts.map((val:CourseType) => (
+    {courseParts.map((val:CoursePart) => (
       <p key={val.name}>
-        {val.name} {val.exerciseCount}
+        {val.name} {val.excerciseCount}
       </p>
     ))}
   </>
